@@ -8,7 +8,7 @@ COMPONENT_DOCS := /tmp/component-docs
 WASMTIME_VERSION := v30.0.2
 
 ifneq (,$(findstring darwin,$(shell /bin/bash -c 'echo $$OSTYPE')))
-WASMTIME_DIR := wasmtime-$(WASMTIME_VERSION)-aarch64-musl
+WASMTIME_DIR := wasmtime-$(WASMTIME_VERSION)-aarch64-macos
 WAC_BINARY := wac-cli-aarch64-apple-darwin
 else
 WASMTIME_DIR := wasmtime-$(WASMTIME_VERSION)-x86_64-linux
